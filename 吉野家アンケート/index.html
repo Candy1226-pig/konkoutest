@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スタッフ評価アンケート</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>スタッフ評価アンケート</h1>
+    <form action="/submit" method="post">
+        <label for="name">お名前（任意）:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="visit_date">来店日:</label><br>
+        <input type="date" id="visit_date" name="visit_date" required><br><br>
+
+        <label for="staff_name">スタッフの名前:</label><br>
+        <input type="text" id="staff_name" name="staff_name" required><br><br>
+
+        <label for="staff_friendliness">スタッフの親切さ:</label><br>
+        <select id="staff_friendliness" name="staff_friendliness" required>
+            <option value="5">非常に良い</option>
+            <option value="4">良い</option>
+            <option value="3">普通</option>
+            <option value="2">悪い</option>
+            <option value="1">非常に悪い</option>
+        </select><br><br>
+
+        <label for="staff_efficiency">スタッフの効率性:</label><br>
+        <select id="staff_efficiency" name="staff_efficiency" required>
+            <option value="5">非常に良い</option>
+            <option value="4">良い</option>
+            <option value="3">普通</option>
+            <option value="2">悪い</option>
+            <option value="1">非常に悪い</option>
+        </select><br><br>
+
+        <label for="staff_appearance">スタッフの身だしなみ:</label><br>
+        <select id="staff_appearance" name="staff_appearance" required>
+            <option value="5">非常に良い</option>
+            <option value="4">良い</option>
+            <option value="3">普通</option>
+            <option value="2">悪い</option>
+            <option value="1">非常に悪い</option>
+        </select><br><br>
+
+        <label for="comments">その他のコメント:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
